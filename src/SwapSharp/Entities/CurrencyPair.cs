@@ -8,16 +8,6 @@ namespace SwapSharp.Entities;
 public class CurrencyPair
 {
     /// <summary>
-    /// The base currency compaired against
-    /// </summary>
-    public Currency BaseCurrency { get; private set; }
-
-    /// <summary>
-    /// The currency that needs to be compared to
-    /// </summary>
-    public Currency QuoteCurrency { get; private set; }
-
-    /// <summary>
     /// Initializes a new instance of the <see cref="CurrencyPair"/> class.
     /// </summary>
     /// <param name="baseCurrency"></param>
@@ -27,4 +17,14 @@ public class CurrencyPair
         BaseCurrency = baseCurrency;
         QuoteCurrency = quoteCurrency;
     }
+
+    /// <summary>
+    /// Gets the base currency compaired against.
+    /// </summary>
+    public Currency BaseCurrency { get; private set; }
+
+    /// <summary>
+    /// Gets the currency that needs to be compared to.
+    /// </summary>
+    public Currency QuoteCurrency { get; private set; }
 }

@@ -1,29 +1,10 @@
-using SwapSharp.Entities.Enums;
-
 namespace SwapSharp.Entities;
 
 /// <summary>
-/// The exchange rate returned from the provider
+/// The exchange rate returned from the provider.
 /// </summary>
 public class ExchangeRate
 {
-    /// <summary>
-    /// The currency pair which is being measured.
-    /// </summary>
-    public CurrencyPair CurrencyPair { get; private set; }
-
-    /// <summary>
-    /// The value of the rated compared to the base.
-    /// </summary>
-    public decimal Value { get; private set; }
-
-    public DateTimeOffset Date { get; private set; }
-
-    /// <summary>
-    /// The type of the ExchangeRateProvider.
-    /// </summary>
-    public Type Provider { get; private set; }
-
     /// <summary>
     /// Initializes a new instance of the <see cref="ExchangeRate"/> class.
     /// </summary>
@@ -38,4 +19,24 @@ public class ExchangeRate
         Date = date;
         Provider = provider;
     }
+
+    /// <summary>
+    /// Gets the currency pair which is being measured.
+    /// </summary>
+    public CurrencyPair CurrencyPair { get; private set; }
+
+    /// <summary>
+    /// Gets the value of the rated compared to the base.
+    /// </summary>
+    public decimal Value { get; private set; }
+
+    /// <summary>
+    /// Gets the date of the ExchangeRate.
+    /// </summary>
+    public DateTimeOffset Date { get; private set; }
+
+    /// <summary>
+    /// Gets the type of the ExchangeRateProvider.
+    /// </summary>
+    public Type Provider { get; private set; }
 }

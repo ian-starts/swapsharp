@@ -6,12 +6,6 @@ namespace SwapSharp.Queries;
 /// <inheritdoc />
 public class ExchangeRateQuery : IExchangeRateQuery
 {
-    /// <inheritdoc/>
-    public CurrencyPair CurrencyPair { get; private set; }
-
-    /// <inheritdoc/>
-    public Dictionary<string, string> Options { get; private set; }
-
     /// <summary>
     /// Initializes a new instance of the <see cref="ExchangeRateQuery"/> class.
     /// </summary>
@@ -22,4 +16,10 @@ public class ExchangeRateQuery : IExchangeRateQuery
         CurrencyPair = currencyPair;
         Options = options;
     }
+
+    /// <inheritdoc/>
+    public CurrencyPair CurrencyPair { get; private set; }
+
+    /// <inheritdoc/>
+    public Dictionary<string, string> Options { get; private set; }
 }

@@ -6,9 +6,6 @@ namespace SwapSharp.Queries;
 /// <inheritdoc cref="SwapSharp.Queries.Contracts.IHistoricalExchangeRateQuery" />
 public class HistoricalExchangeRateQuery : ExchangeRateQuery, IHistoricalExchangeRateQuery
 {
-    /// <inheritdoc/>
-    public DateTimeOffset Date { get; private set; }
-
     /// <summary>
     /// Initializes a new instance of the <see cref="HistoricalExchangeRateQuery"/> class.
     /// </summary>
@@ -23,4 +20,7 @@ public class HistoricalExchangeRateQuery : ExchangeRateQuery, IHistoricalExchang
     {
         Date = date;
     }
+
+    /// <inheritdoc/>
+    public DateTimeOffset Date { get; private set; }
 }

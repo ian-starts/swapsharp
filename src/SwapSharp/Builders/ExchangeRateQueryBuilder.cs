@@ -9,21 +9,6 @@ namespace SwapSharp.Builders;
 public class ExchangeRateQueryBuilder
 {
     /// <summary>
-    /// The CurrencyPair that's being queried
-    /// </summary>
-    public CurrencyPair CurrencyPair { get; private set; }
-
-    /// <summary>
-    /// The date at which an ExchangeRate should be requested. 
-    /// </summary>
-    public DateTimeOffset? Date { get; set; }
-
-    /// <summary>
-    /// Options used by a specific provider to set or add functionality like api key or app key
-    /// </summary>
-    public Dictionary<string, string> Options { get; } = new ();
-
-    /// <summary>
     /// Initializes a new instance of the <see cref="ExchangeRateQueryBuilder"/> class.
     /// </summary>
     /// <param name="currencyPair"></param>
@@ -33,7 +18,22 @@ public class ExchangeRateQueryBuilder
     }
 
     /// <summary>
-    /// Ådd an option to the list of options.
+    /// Gets the currency pair.
+    /// </summary>
+    public CurrencyPair CurrencyPair { get; private set; }
+
+    /// <summary>
+    /// Gets or sets the date at which an ExchangeRate should be requested.
+    /// </summary>
+    public DateTimeOffset? Date { get; set; }
+
+    /// <summary>
+    /// Gets options used by a specific provider to set or add functionality like api key or app key.
+    /// </summary>
+    public Dictionary<string, string> Options { get; } = new ();
+
+    /// <summary>
+    /// Add an option to the list of options.
     /// </summary>
     /// <param name="key"></param>
     /// <param name="value"></param>
@@ -45,7 +45,7 @@ public class ExchangeRateQueryBuilder
     }
 
     /// <summary>
-    /// Build the query
+    /// Build the query.
     /// </summary>
     /// <returns></returns>
     public ExchangeRateQuery Build()

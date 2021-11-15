@@ -9,7 +9,7 @@ namespace SwapSharp.Providers.Contracts;
 public interface IExchangeRateProvider
 {
     /// <summary>
-    /// Get the ExchangeRate based on the query. 
+    /// Get the ExchangeRate based on the query.
     /// </summary>
     /// <param name="query"></param>
     /// <returns></returns>

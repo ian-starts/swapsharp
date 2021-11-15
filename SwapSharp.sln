@@ -10,7 +10,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapSharp.Tests", "tests\Sw
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_solutionItems", "_solutionItems", "{A542BAC7-5F00-463B-9551-70A6D139EA07}"
 	ProjectSection(SolutionItems) = preProject
-		_solutionItems\StyleCop.ruleset = _solutionItems\StyleCop.ruleset
+		stylecop.json = stylecop.json
+		.gitignore = .gitignore
+		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
 Global
