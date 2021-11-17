@@ -1,4 +1,7 @@
 using FluentAssertions;
+using Microsoft.Extensions.DependencyInjection;
+using SwapSharp.Exchanger.Providers;
+using SwapSharp.Swap.Extensions;
 using Xunit;
 
 namespace SwapSharp.Swap.Tests;

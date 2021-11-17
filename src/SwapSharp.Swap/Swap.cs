@@ -2,7 +2,6 @@
 using SwapSharp.Exchanger.Entities;
 using SwapSharp.Exchanger.Exceptions;
 using SwapSharp.Exchanger.Providers.Contracts;
-using SwapSharp.Exchanger.Queries;
 using SwapSharp.Swap.Contracts;
 
 namespace SwapSharp.Swap;

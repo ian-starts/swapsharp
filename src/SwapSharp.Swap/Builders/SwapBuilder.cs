@@ -18,7 +18,6 @@ public class SwapBuilder
 
     private IDistributedCache? _distributedCache;
 
-
     /// <summary>
     /// Initializes a new instance of the <see cref="SwapBuilder"/> class.
     /// </summary>

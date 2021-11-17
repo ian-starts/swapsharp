@@ -57,7 +57,6 @@ public class OpenExchangeRatesProvider : HistoricalExchangeRateProviderBase
         throw new NotImplementedException();
     }
 
-
     /// <inheritdoc />
     public override async Task<ExchangeRate> GetCurrentExchangeRate(
         ExchangeRateQuery query,
@@ -136,7 +135,6 @@ public class OpenExchangeRatesProvider : HistoricalExchangeRateProviderBase
         {
             return await _httpClient.GetStringAsync(url, cancellationToken);
         }
-
 
         // Try get cache hit based on url
         var cachedResponse = await _cache.GetAsync(url, cancellationToken);

@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_solutionItems", "_solution
 		stylecop.json = stylecop.json
 		.gitignore = .gitignore
 		.editorconfig = .editorconfig
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapSharp.Swap", "src\SwapSharp.Swap\SwapSharp.Swap.csproj", "{2BE71EC3-3F35-4618-91F0-B7C14BA2D1AF}"

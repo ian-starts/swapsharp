@@ -3,7 +3,7 @@ using SwapSharp.Exchanger.Queries;
 namespace SwapSharp.Exchanger.Exceptions;
 
 /// <summary>
-/// Thrown when the query is not accepted by the provider. 
+/// Thrown when the query is not accepted by the provider.
 /// </summary>
 public class InvalidQueryException : Exception
 {
