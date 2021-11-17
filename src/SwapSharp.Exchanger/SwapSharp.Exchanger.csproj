@@ -4,12 +4,13 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>1.0.1</PackageVersion>
         <Title>SwapSharp.Exchanger</Title>
         <Authors>Ian Kok</Authors>
         <Description>Retrieve currency exchange from different providers</Description>
         <PackageLicense>https://github.com/ian-starts/swapsharp/blob/main/LICENSE</PackageLicense>
         <RepositoryUrl>https://github.com/ian-starts/swapsharp</RepositoryUrl>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <PropertyGroup>
