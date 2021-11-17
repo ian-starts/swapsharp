@@ -4,9 +4,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CF6AFD52-817
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{756481E0-D5CC-4C3D-A754-B13BF0397B60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapSharp", "src\SwapSharp\SwapSharp.csproj", "{4303210D-B50A-4FFA-8602-4010E6C8F2DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapSharp.Exchanger", "src\SwapSharp.Exchanger\SwapSharp.Exchanger.csproj", "{4303210D-B50A-4FFA-8602-4010E6C8F2DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapSharp.Tests", "tests\SwapSharp.Tests\SwapSharp.Tests.csproj", "{E1E5FDED-858C-4126-B4BA-3CF19798CC65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapSharp.Exchanger.Tests", "tests\SwapSharp.Exchanger.Tests\SwapSharp.Exchanger.Tests.csproj", "{E1E5FDED-858C-4126-B4BA-3CF19798CC65}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_solutionItems", "_solutionItems", "{A542BAC7-5F00-463B-9551-70A6D139EA07}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_solutionItems", "_solution
 		.gitignore = .gitignore
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapSharp.Swap", "src\SwapSharp.Swap\SwapSharp.Swap.csproj", "{2BE71EC3-3F35-4618-91F0-B7C14BA2D1AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapSharp.Swap.Tests", "tests\SwapSharp.Swap.Tests\SwapSharp.Swap.Tests.csproj", "{7825786D-A9EC-4579-9ECA-1DB74009F169}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4303210D-B50A-4FFA-8602-4010E6C8F2DE} = {CF6AFD52-817C-4254-BCA2-EEC9DC5D845B}
 		{E1E5FDED-858C-4126-B4BA-3CF19798CC65} = {756481E0-D5CC-4C3D-A754-B13BF0397B60}
+		{2BE71EC3-3F35-4618-91F0-B7C14BA2D1AF} = {CF6AFD52-817C-4254-BCA2-EEC9DC5D845B}
+		{7825786D-A9EC-4579-9ECA-1DB74009F169} = {756481E0-D5CC-4C3D-A754-B13BF0397B60}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4303210D-B50A-4FFA-8602-4010E6C8F2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -33,5 +39,13 @@ Global
 		{E1E5FDED-858C-4126-B4BA-3CF19798CC65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1E5FDED-858C-4126-B4BA-3CF19798CC65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1E5FDED-858C-4126-B4BA-3CF19798CC65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE71EC3-3F35-4618-91F0-B7C14BA2D1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE71EC3-3F35-4618-91F0-B7C14BA2D1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE71EC3-3F35-4618-91F0-B7C14BA2D1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE71EC3-3F35-4618-91F0-B7C14BA2D1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7825786D-A9EC-4579-9ECA-1DB74009F169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7825786D-A9EC-4579-9ECA-1DB74009F169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7825786D-A9EC-4579-9ECA-1DB74009F169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7825786D-A9EC-4579-9ECA-1DB74009F169}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
