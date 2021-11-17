@@ -1,5 +1,4 @@
 using Microsoft.Extensions.DependencyInjection;
-using SwapSharp.Exchanger.Providers.Contracts;
 using SwapSharp.Swap.Builders;
 using SwapSharp.Swap.Contracts;
 using SwapSharp.Swap.Factories;
